@@ -14,7 +14,6 @@ export const AnimatedBackground = () => {
     canvas.width = width;
     canvas.height = height;
 
-    // Criar partículas
     const particles: { x: number; y: number; vx: number; vy: number }[] = [];
     const numParticles = 100;
 
@@ -30,7 +29,6 @@ export const AnimatedBackground = () => {
     function draw() {
       ctx.clearRect(0, 0, width, height);
 
-      // desenhar partículas
       ctx.fillStyle = "rgba(255,255,255,0.7)";
       particles.forEach((p) => {
         ctx.beginPath();
@@ -38,7 +36,6 @@ export const AnimatedBackground = () => {
         ctx.fill();
       });
 
-      // desenhar linhas entre partículas próximas
       for (let i = 0; i < numParticles; i++) {
         for (let j = i + 1; j < numParticles; j++) {
           const dx = particles[i].x - particles[j].x;
@@ -54,7 +51,6 @@ export const AnimatedBackground = () => {
         }
       }
 
-      // atualizar posições
       particles.forEach((p) => {
         p.x += p.vx;
         p.y += p.vy;
