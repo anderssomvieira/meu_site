@@ -21,7 +21,7 @@ header img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #BEBEBE;
+    border: 5px solid #001e00;
 }
 
 .center {
@@ -29,7 +29,7 @@ header img {
 }
 
 h1 {
-    color: #BEBEBE;
+    color: ##001e00;
 }
 
 footer img {
@@ -60,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #BEBEBE;
+    color: ##001e00;
 }
 
 .contact-form input{
