@@ -21,7 +21,7 @@ header img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #20B2AA;
+    border: 5px solid #3f784c;
 }
 
 .center {
@@ -29,7 +29,7 @@ header img {
 }
 
 h1 {
-    color: #20B2AA;
+    color: #3f784c;
 }
 
 footer img {
@@ -60,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #20B2AA;
+    color: #3f784c;
 }
 
 .contact-form input{
