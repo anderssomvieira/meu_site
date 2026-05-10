@@ -2,13 +2,16 @@
   var width, height, canvas, ctx;
   var points = [];
 
-  function init() {
+  function resizeCanvas() {
     width = window.innerWidth;
     height = window.innerHeight;
-
-    canvas = document.getElementById('demo-canvas');
     canvas.width = width;
     canvas.height = height;
+  }
+
+  function init() {
+    canvas = document.getElementById('demo-canvas');
+    resizeCanvas();
     ctx = canvas.getContext('2d');
 
     points = []; // limpa pontos antigos
