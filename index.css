@@ -1,4 +1,26 @@
 html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+canvas {
+  position: fixed;   /* fixa no fundo */
+  top: 0;
+  left: 0;
+  width: 100vw;      /* ocupa toda a largura da janela */
+  height: 100vh;     /* ocupa toda a altura da janela */
+  z-index: -1;       /* fica atrás do conteúdo */
+  display: block;
+}
+
+.container, header, nav, main, footer {
+  position: relative;
+  z-index: 1;        /* garante que texto e foto fiquem acima do canvas */
+}
+
+
+html, body {
     margin: 0;
     padding: 0;
     overflow: hidden; /* remove barra de rolagem */
