@@ -71,7 +71,10 @@ footer p {
 .container {
     padding: 0px 50px;
     position: relative;
-    z-index: 1; /* garante que o texto fique acima do canvas */
+    z-index: 1;
+    margin-top: 80px; /* afasta o conteúdo do topo */
+}
+
 }
 
 nav a {
