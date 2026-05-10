@@ -11,6 +11,8 @@
     canvas.height = height;
     ctx = canvas.getContext('2d');
 
+    points = []; // limpa pontos antigos
+
     // criar pontos em grid
     for (var x = 0; x < width; x += width / 20) {
       for (var y = 0; y < height; y += height / 20) {
@@ -99,5 +101,9 @@
     return Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2));
   }
 
+  // inicializa
   init();
+
+  // redimensiona junto com a janela
+  window.addEventListener('resize', init);
 })();
