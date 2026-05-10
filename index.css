@@ -1,3 +1,20 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* remove barra de rolagem */
+    height: 100%;
+}
+
+canvas {
+    position: fixed;   /* fixa no fundo */
+    top: 0;
+    left: 0;
+    width: 100vw;      /* ocupa toda a largura da janela */
+    height: 100vh;     /* ocupa toda a altura da janela */
+    z-index: -1;       /* fica atrás do conteúdo */
+    display: block;
+}
+
 body {
     color: white;
     background-color: black;
@@ -53,6 +70,8 @@ footer p {
 
 .container {
     padding: 0px 50px;
+    position: relative;
+    z-index: 1; /* garante que o texto fique acima do canvas */
 }
 
 nav a {
@@ -63,7 +82,7 @@ nav a:hover {
     color: #3f784c;
 }
 
-.contact-form input{
+.contact-form input {
     width: 100%;
     padding: 8px 0;
     margin: 8px 0;
