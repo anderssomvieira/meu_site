@@ -72,7 +72,9 @@ footer p {
     padding: 0px 50px;
     position: relative;
     z-index: 1;
-    margin-top: 80px; /* afasta o conteúdo do topo */
+    margin-top: 100px; /* afasta o conteúdo do topo */
+}
+
 }
 
 }
